@@ -1,0 +1,9 @@
+soccer_538:
+    target: dev
+    outputs:
+        dev:
+          type: databricks
+          schema: dbt_jonas_lyngjorgensen
+          host: "{{ env_var('databricks_host') }}"
+          http_path: /sql/your/http/path
+          token: "{{ env_var('databricks_token') }}"
